@@ -32,6 +32,8 @@ app.post('/upload', upload.single('image'), async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
